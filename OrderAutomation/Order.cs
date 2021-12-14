@@ -13,7 +13,7 @@ namespace OrderAutomation
         public Customer Customer { get; set; }
         public Payment Payments { get; set; }
         public List<OrderDetail> OrderDetails { get; set; }
-
+        public int denme { get; set; }
         public Order()
         {
 
