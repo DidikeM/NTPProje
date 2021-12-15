@@ -19,13 +19,7 @@ namespace OrderAutomation
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
-
-
-
-
-
-
+            
             //Customer x = new Customer();
             //x.Name = "ahmet";
             //Customer y = new Customer();
