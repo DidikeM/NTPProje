@@ -20,7 +20,7 @@ namespace OrderAutomation
         private void Form1_Load(object sender, EventArgs e)
         {
             /* Yavru naber */
-
+            /* iidir ashko sndn */
 
 
             //Customer x = new Customer();
