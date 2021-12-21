@@ -4,18 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrderAutomation
+namespace OrderAutomation.Entities
 {
-    class Item
+    class OrderDetail
     {
-        public int ShippingWeight { get; set; }
-        public string Description { get; set; }
+        public int Quantity { get; set; }
+        public int TaxStatus { get; set; }
 
-        int GetPriceForQuantity()
+        int CalcSubTotal()
         {
+
             return 0;
         }
-        int GetWeight()
+        int CalcWeight()
         {
 
             return 0;

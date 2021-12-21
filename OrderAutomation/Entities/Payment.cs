@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrderAutomation
+namespace OrderAutomation.Entities
 {
-    abstract class Payment
+    class Payment
     {
         public Double Amount { get; set; }
-
     }
 }

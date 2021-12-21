@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrderAutomation
+namespace OrderAutomation.Entities
 {
     class Credit:Payment
     {
@@ -17,6 +17,6 @@ namespace OrderAutomation
             return 0;
         }
 
-        
+
     }
 }
