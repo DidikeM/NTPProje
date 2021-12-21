@@ -25,6 +25,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,6 +35,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -57,15 +59,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Address.cs" />
+    <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Cash.cs" />
     <Compile Include="Entities\Check.cs" />
     <Compile Include="Entities\Credit.cs" />
     <Compile Include="Entities\Customer.cs" />
     <Compile Include="Entities\CustomerDal.cs" />
+    <Compile Include="Entities\Item.cs" />
     <Compile Include="Entities\Order.cs" />
     <Compile Include="Entities\OrderAutomationContext.cs" />
     <Compile Include="Entities\OrderDetail.cs" />
     <Compile Include="Entities\Payment.cs" />
+    <Compile Include="Entities\Tax.cs" />
     <Compile Include="Forms\DnmForm.cs">
       <SubType>Form</SubType>
     </Compile>

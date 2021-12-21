@@ -8,11 +8,16 @@ namespace OrderAutomation.Entities
 {
     class Order
     {
+        public int ID { get; set; }
+        public int CustomerID { get; set; }
         public DateTime Date { get; set; }
         public int Status { get; set; }
-        public Customer Customer { get; set; }
-        public Payment Payments { get; set; }
-        public List<OrderDetail> OrderDetails { get; set; }
+        public double TotalTax { get; set; }
+        public double TotalPrice { get; set; }
+        public double TotalWeight { get; set; }
+        //public Customer Customer { get; set; }
+        //public Payment Payments { get; set; }
+        //public List<OrderDetail> OrderDetails { get; set; }
         public Order()
         {
 

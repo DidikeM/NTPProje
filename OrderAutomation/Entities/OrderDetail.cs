@@ -8,8 +8,13 @@ namespace OrderAutomation.Entities
 {
     class OrderDetail
     {
+        public int ID { get; set; }
+        public int OrderID { get; set; }
+        public int ItemID { get; set; }
         public int Quantity { get; set; }
-        public int TaxStatus { get; set; }
+        public double SubTax { get; set; }
+        public double SubPrice { get; set; }
+        public double SubWeight { get; set; }
 
         int CalcSubTotal()
         {

@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace OrderAutomation.Entities
 {
-    class Address
+    class Item
     {
         public int ID { get; set; }
-        public string Country { get; set; }
-        public string City { get; set; }
-        public string District { get; set; }
-        public string Street { get; set; }
-        public string No { get; set; }
+        public string ItemName { get; set; }
+        public double ShippingWeight { get; set; }
         public string Description { get; set; }
+        public int TaxID { get; set; }
+        public double Price { get; set; }
     }
 }
