@@ -5,15 +5,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrderAutomation.Entities
+namespace OrderAutomation.Entities.Dal
 {
-    class CustomerDal
+    class CustomerDal:IRepository<Customer>
     {
         public List<Customer> GetAll()
         {
             using (OrderAutomationContext context = new OrderAutomationContext())
             {
                 return context.Customers.ToList();
+            }
+        }
+
+        public Customer GetByID(int ID)
+        {
+            using (OrderAutomationContext context = new OrderAutomationContext())
+            {
+                return context.Customers.FirstOrDefault(p => p.ID == ID);
             }
         }
 
@@ -25,6 +33,7 @@ namespace OrderAutomation.Entities
                 context.SaveChanges();
             }
         }
+
         public void Update(Customer customer)
         {
             using (OrderAutomationContext context = new OrderAutomationContext())
@@ -34,6 +43,7 @@ namespace OrderAutomation.Entities
                 context.SaveChanges();
             }
         }
+
         public void Delate(Customer customer)
         {
             using (OrderAutomationContext context = new OrderAutomationContext())
@@ -43,18 +53,12 @@ namespace OrderAutomation.Entities
                 context.SaveChanges();
             }
         }
+
         public List<Customer> GetByName(string key)
         {
             using (OrderAutomationContext context = new OrderAutomationContext())
             {
                 return context.Customers.Where(p => p.Name.Contains(key)).ToList();
-            }
-        }
-        public Customer GetByID(int ID)
-        {
-            using (OrderAutomationContext context = new OrderAutomationContext())
-            {
-                return context.Customers.FirstOrDefault(p => p.ID == ID);
             }
         }
     }

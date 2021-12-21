@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using OrderAutomation.Entities;
+using OrderAutomation.Entities.Dal;
 
 namespace OrderAutomation.Forms
 {
@@ -18,12 +19,10 @@ namespace OrderAutomation.Forms
             InitializeComponent();
         }
 
+        private CustomerDal _customerDal = new CustomerDal();
         private void DnmForm_Load(object sender, EventArgs e)
         {
-            using (OrderAutomationContext context = new OrderAutomationContext())
-            {
-                dgwdeneme.DataSource = context.Customers.ToList();
-            }
+            dgwdeneme.DataSource = _customerDal.GetAll();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

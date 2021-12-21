@@ -64,7 +64,14 @@
     <Compile Include="Entities\Check.cs" />
     <Compile Include="Entities\Credit.cs" />
     <Compile Include="Entities\Customer.cs" />
-    <Compile Include="Entities\CustomerDal.cs" />
+    <Compile Include="Entities\Dal\AddressDal.cs" />
+    <Compile Include="Entities\Dal\AdminDal.cs" />
+    <Compile Include="Entities\Dal\CustomerDal.cs" />
+    <Compile Include="Entities\Dal\IRepository.cs" />
+    <Compile Include="Entities\Dal\ItemDal.cs" />
+    <Compile Include="Entities\Dal\OrderDal.cs" />
+    <Compile Include="Entities\Dal\OrderDetailDal.cs" />
+    <Compile Include="Entities\Dal\TaxDal.cs" />
     <Compile Include="Entities\Item.cs" />
     <Compile Include="Entities\Order.cs" />
     <Compile Include="Entities\OrderAutomationContext.cs" />
