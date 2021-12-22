@@ -78,6 +78,12 @@
     <Compile Include="Entities\OrderDetail.cs" />
     <Compile Include="Entities\Payment.cs" />
     <Compile Include="Entities\Tax.cs" />
+    <Compile Include="Forms\CustomerRegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomerRegisterForm.Designer.cs">
+      <DependentUpon>CustomerRegisterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DnmForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\CustomerRegisterForm.resx">
+      <DependentUpon>CustomerRegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DnmForm.resx">
       <DependentUpon>DnmForm.cs</DependentUpon>
     </EmbeddedResource>

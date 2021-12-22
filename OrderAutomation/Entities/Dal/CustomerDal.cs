@@ -61,5 +61,21 @@ namespace OrderAutomation.Entities.Dal
                 return context.Customers.Where(p => p.Name.Contains(key)).ToList();
             }
         }
+
+        public Customer GetByUsername(string username)
+        {
+            using (OrderAutomationContext context = new OrderAutomationContext())
+            {
+                return context.Customers.FirstOrDefault(p => p.Username == username);
+            }
+        }
+
+        public Customer GetByPhoneNumber(double phoneNumber)
+        {
+            using (OrderAutomationContext context = new OrderAutomationContext())
+            {
+                return context.Customers.FirstOrDefault(p => p.PhoneNumber == phoneNumber);
+            }
+        }
     }
 }

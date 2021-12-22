@@ -31,6 +31,9 @@ namespace OrderAutomation.Entities.Dal
             {
                 context.Addresses.Add(address);
                 context.SaveChanges();
+                //var entity = context.Entry(address);
+                //entity.State = EntityState.Added;
+                //context.SaveChanges();
             }
         }
 
