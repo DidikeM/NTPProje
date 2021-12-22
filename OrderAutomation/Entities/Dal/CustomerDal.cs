@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OrderAutomation.Entities.Dal
 {
-    class CustomerDal:IRepository<Customer>
+    class CustomerDal : IRepository<Customer>
     {
         public List<Customer> GetAll()
         {
@@ -75,6 +75,20 @@ namespace OrderAutomation.Entities.Dal
             using (OrderAutomationContext context = new OrderAutomationContext())
             {
                 return context.Customers.FirstOrDefault(p => p.PhoneNumber == phoneNumber);
+            }
+        }
+        public bool CheckByLogin(string username, string password)
+        {
+            using (OrderAutomationContext context = new OrderAutomationContext())
+            {
+                if (context.Customers.FirstOrDefault(p => p.Username == username && p.Password == password) != null)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
         }
     }

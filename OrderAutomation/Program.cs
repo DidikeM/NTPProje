@@ -17,7 +17,7 @@ namespace OrderAutomation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CustomerRegisterForm());
+            Application.Run(new CustomerLogin());
         }
     }
 }
