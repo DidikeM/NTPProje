@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace OrderAutomation.Entities
 {
-    public class Tax
+    class Taxlst
     {
         public int ID { get; set; }
-        public string TaxName { get; set; }
-        public int TaxPercent { get; set; }
+        public string VergiName { get; set; }
+        public int VergiPercent { get; set; }
+        public string Text { get; set; }
     }
 }

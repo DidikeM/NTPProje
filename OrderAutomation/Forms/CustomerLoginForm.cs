@@ -12,9 +12,9 @@ using OrderAutomation.Entities.Dal;
 
 namespace OrderAutomation.Forms
 {
-    public partial class CustomerLogin : Form
+    public partial class CustomerLoginForm : Form
     {
-        public CustomerLogin()
+        public CustomerLoginForm()
         {
             InitializeComponent();
         }

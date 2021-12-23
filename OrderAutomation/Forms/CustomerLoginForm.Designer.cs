@@ -1,7 +1,7 @@
 ﻿
 namespace OrderAutomation.Forms
 {
-    partial class CustomerLogin
+    partial class CustomerLoginForm
     {
         /// <summary>
         /// Required designer variable.

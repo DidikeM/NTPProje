@@ -10,9 +10,9 @@ namespace OrderAutomation.Entities
     {
         public int ID { get; set; }
         public string ItemName { get; set; }
-        public double ShippingWeight { get; set; }
+        public decimal ShippingWeight { get; set; }
         public string Description { get; set; }
         public int TaxID { get; set; }
-        public double Price { get; set; }
+        public decimal Price { get; set; }
     }
 }

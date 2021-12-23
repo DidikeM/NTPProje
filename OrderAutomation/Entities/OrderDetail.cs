@@ -12,9 +12,9 @@ namespace OrderAutomation.Entities
         public int OrderID { get; set; }
         public int ItemID { get; set; }
         public int Quantity { get; set; }
-        public double SubTax { get; set; }
-        public double SubPrice { get; set; }
-        public double SubWeight { get; set; }
+        public decimal SubTax { get; set; }
+        public decimal SubPrice { get; set; }
+        public decimal SubWeight { get; set; }
 
         int CalcSubTotal()
         {

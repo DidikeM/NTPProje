@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OrderAutomation.Entities;
+using OrderAutomation.Entities.Dal;
 using OrderAutomation.Forms;
 
 namespace OrderAutomation
@@ -17,7 +19,12 @@ namespace OrderAutomation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CustomerLogin());
+
+            Customer customer = new Customer();
+            CustomerDal customerDal = new CustomerDal();
+            customer =customerDal.GetByID(1);
+
+            Application.Run(new CustomerToOrder(customer));
         }
     }
 }

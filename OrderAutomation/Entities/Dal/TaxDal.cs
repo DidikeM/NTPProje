@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OrderAutomation.Entities.Dal
 {
-    class TaxDal : IRepository<Tax>
+    class TaxDal:IRepository<Tax>
     {
         public List<Tax> GetAll()
         {
