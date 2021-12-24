@@ -34,12 +34,13 @@ namespace OrderAutomation.Forms
             this.tbxPassword = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(53, 78);
+            this.lblUsername.Location = new System.Drawing.Point(12, 22);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(64, 13);
             this.lblUsername.TabIndex = 0;
@@ -47,14 +48,14 @@ namespace OrderAutomation.Forms
             // 
             // tbxUsername
             // 
-            this.tbxUsername.Location = new System.Drawing.Point(143, 75);
+            this.tbxUsername.Location = new System.Drawing.Point(102, 19);
             this.tbxUsername.Name = "tbxUsername";
             this.tbxUsername.Size = new System.Drawing.Size(100, 20);
             this.tbxUsername.TabIndex = 1;
             // 
             // tbxPassword
             // 
-            this.tbxPassword.Location = new System.Drawing.Point(143, 116);
+            this.tbxPassword.Location = new System.Drawing.Point(102, 60);
             this.tbxPassword.Name = "tbxPassword";
             this.tbxPassword.Size = new System.Drawing.Size(100, 20);
             this.tbxPassword.TabIndex = 4;
@@ -62,7 +63,7 @@ namespace OrderAutomation.Forms
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(53, 119);
+            this.lblPassword.Location = new System.Drawing.Point(12, 63);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(28, 13);
             this.lblPassword.TabIndex = 3;
@@ -70,7 +71,7 @@ namespace OrderAutomation.Forms
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(168, 157);
+            this.btnLogin.Location = new System.Drawing.Point(127, 101);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 5;
@@ -78,17 +79,28 @@ namespace OrderAutomation.Forms
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // CustomerLogin
+            // btnRegister
+            // 
+            this.btnRegister.Location = new System.Drawing.Point(15, 101);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(75, 23);
+            this.btnRegister.TabIndex = 6;
+            this.btnRegister.Text = "Kayıt Ol";
+            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
+            // CustomerLoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(344, 291);
+            this.ClientSize = new System.Drawing.Size(251, 155);
+            this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.tbxPassword);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.tbxUsername);
             this.Controls.Add(this.lblUsername);
-            this.Name = "CustomerLogin";
+            this.Name = "CustomerLoginForm";
             this.Text = "CusstomerLogin";
             this.Load += new System.EventHandler(this.CusstomerLogin_Load);
             this.ResumeLayout(false);
@@ -103,5 +115,6 @@ namespace OrderAutomation.Forms
         private System.Windows.Forms.TextBox tbxPassword;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnRegister;
     }
 }

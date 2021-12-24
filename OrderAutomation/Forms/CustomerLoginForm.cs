@@ -49,5 +49,15 @@ namespace OrderAutomation.Forms
                 }
             }
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            using (CustomerRegisterForm customerRegisterForm = new CustomerRegisterForm())
+            {
+                this.Hide();
+                customerRegisterForm.ShowDialog();
+                this.Show();
+            }
+        }
     }
 }
