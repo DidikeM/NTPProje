@@ -11,7 +11,7 @@ namespace OrderAutomation.Entities
         public int ID { get; set; }
         public int CustomerID { get; set; }
         public DateTime Date { get; set; }
-        public int Status { get; set; }
+        public int Status { get; set; }// 0 = Sipariş alındı, 1 = Ödeme yapıldı, 2 = Ürünler teslim edildi.
         public decimal TotalTax { get; set; }
         public decimal TotalPrice { get; set; }
         public decimal TotalWeight { get; set; }

@@ -20,11 +20,11 @@ namespace OrderAutomation
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Customer customer = new Customer();
-            CustomerDal customerDal = new CustomerDal();
-            customer = customerDal.GetByID(7);
+            //Customer customer = new Customer();
+            //CustomerDal customerDal = new CustomerDal();
+            //customer = customerDal.GetByID(7);
 
-            Application.Run(new CustomerListOrderForm(customer));
+            Application.Run(new AdminCustomerMenageForm());
         }
     }
 }
