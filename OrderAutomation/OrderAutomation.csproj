@@ -85,6 +85,12 @@
     <Compile Include="Forms\AdminItemMenageForm.Designer.cs">
       <DependentUpon>AdminItemMenageForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\CustomerListOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomerListOrderForm.Designer.cs">
+      <DependentUpon>CustomerListOrderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CustomerLoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\AdminItemMenageForm.resx">
       <DependentUpon>AdminItemMenageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomerListOrderForm.resx">
+      <DependentUpon>CustomerListOrderForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomerLoginForm.resx">
       <DependentUpon>CustomerLoginForm.cs</DependentUpon>

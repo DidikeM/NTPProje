@@ -25,6 +25,14 @@ namespace OrderAutomation.Entities.Dal
             }
         }
 
+        public List<Order> GetByCustomerID(int CustomerID)
+        {
+            using (OrderAutomationContext context = new OrderAutomationContext())
+            {
+                return context.Orders.Where(p => p.CustomerID == CustomerID).ToList();
+            }
+        }
+
         public void Add(Order order)
         {
             using (OrderAutomationContext context = new OrderAutomationContext())

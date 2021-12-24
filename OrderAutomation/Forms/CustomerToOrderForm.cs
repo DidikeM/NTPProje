@@ -85,7 +85,8 @@ namespace OrderAutomation.Forms
             }
             else
             {
-                OrderDetail orderDetail = new OrderDetail(_itemAdd.ID, Convert.ToInt32(tbxQuantity.Text));
+                OrderDetail orderDetail = new OrderDetail();
+                orderDetail.calcAll(_itemAdd.ID, Convert.ToInt32(tbxQuantity.Text));
                 _orderDetails.Add(orderDetail);
                 tbxQuantity.Text = "";
                 LoadOrderDetailDgw();
@@ -94,16 +95,26 @@ namespace OrderAutomation.Forms
 
         private void btnToOrder_Click(object sender, EventArgs e)
         {
-            Order order = new Order();
-            order.calcAll(_orderDetails);
-            order.CustomerID = _customer.ID;
-            order.Date = DateTime.Today;
-            order.Status = 0;
-            _orderDal.Add(order);
-            foreach (var orderDetail in _orderDetails)
+            if (_orderDetails.Count == 0)
             {
-                orderDetail.OrderID = order.ID;
-                _orderDetailDal.Add(orderDetail);
+                MessageBox.Show("Siparişi tamamlamak için lütfer ürün ekleyiniz!");
+            }
+            else
+            {
+                Order order = new Order();
+                order.calcAll(_orderDetails);
+                order.CustomerID = _customer.ID;
+                order.Date = DateTime.Today;
+                order.Status = 0;
+                _orderDal.Add(order);
+                foreach (var orderDetail in _orderDetails)
+                {
+                    orderDetail.OrderID = order.ID;
+                    _orderDetailDal.Add(orderDetail);
+                }
+
+                MessageBox.Show("Sipariş başarıyla tamamlandı.");
+                this.Close();
             }
         }
     }

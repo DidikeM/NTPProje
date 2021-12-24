@@ -12,7 +12,11 @@ namespace OrderAutomation.Entities
         public decimal SubPrice { get; set; }
         public decimal SubWeight { get; set; }
 
-        public OrderDetail(int itemId, int quantity)
+        public OrderDetail()
+        {
+
+        }
+        public void calcAll(int itemId, int quantity)
         {
             ItemID = itemId;
             Quantity = quantity;

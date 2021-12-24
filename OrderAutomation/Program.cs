@@ -22,9 +22,9 @@ namespace OrderAutomation
 
             Customer customer = new Customer();
             CustomerDal customerDal = new CustomerDal();
-            customer = customerDal.GetByID(6);
+            customer = customerDal.GetByID(7);
 
-            Application.Run(new CustomerToOrderForm(customer));
+            Application.Run(new CustomerListOrderForm(customer));
         }
     }
 }
