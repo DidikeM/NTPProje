@@ -45,7 +45,15 @@ namespace OrderAutomation.Forms
                 }
                 else
                 {
-                    MessageBox.Show("Giriş başarılı");
+                    using (CustomerListOrderForm customerListOrderForm = new CustomerListOrderForm(_customerDal.GetByUsername(tbxUsername.Text)))
+                    {
+                        this.Hide();
+                        customerListOrderForm.ShowDialog();
+                        this.Show();
+                    }
+
+                    tbxUsername.Text = "";
+                    tbxPassword.Text = "";
                 }
             }
         }

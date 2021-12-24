@@ -268,7 +268,7 @@ namespace OrderAutomation.Forms
             // 
             // btnCheckAndPush
             // 
-            this.btnCheckAndPush.Location = new System.Drawing.Point(525, 326);
+            this.btnCheckAndPush.Location = new System.Drawing.Point(525, 309);
             this.btnCheckAndPush.Name = "btnCheckAndPush";
             this.btnCheckAndPush.Size = new System.Drawing.Size(188, 55);
             this.btnCheckAndPush.TabIndex = 9;
@@ -280,7 +280,7 @@ namespace OrderAutomation.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(733, 386);
             this.Controls.Add(this.btnCheckAndPush);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbxUserProparties);

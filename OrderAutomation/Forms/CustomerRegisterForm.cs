@@ -136,6 +136,7 @@ namespace OrderAutomation.Forms
                     _Customer.AddressID = _Address.ID;
                     _customerDal.Add(_Customer);
                     //MessageBox.Show("Yok");
+                    this.Close();
                 }
             }
             //dgwdnm.DataSource = _addressDal.GetAll();
