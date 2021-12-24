@@ -24,7 +24,7 @@ namespace OrderAutomation
             //CustomerDal customerDal = new CustomerDal();
             //customer = customerDal.GetByID(7);
 
-            Application.Run(new AdminCustomerMenageForm());
+            Application.Run(new AdminTaxMenageForm());
         }
     }
 }

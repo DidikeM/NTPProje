@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OrderAutomation.Entities;
 using OrderAutomation.Entities.Dal;
 
 namespace OrderAutomation.Forms
@@ -35,6 +36,8 @@ namespace OrderAutomation.Forms
         private void dgwCustomer_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             LoadOrderDgw();
+            List<OrderDetail> orderDetails = new List<OrderDetail>();
+            dgwOrderDetail.DataSource = orderDetails;
         }
 
         private void LoadOrderDgw()
@@ -49,7 +52,10 @@ namespace OrderAutomation.Forms
 
         private void LoadOrderDetailDgw()
         {
-            dgwOrderDetail.DataSource = _orderDetailDal.GetByOrderID(Convert.ToInt32(dgwOrder.CurrentRow.Cells[0].Value));
+            if (dgwOrder.CurrentRow!=null)
+            {
+                dgwOrderDetail.DataSource = _orderDetailDal.GetByOrderID(Convert.ToInt32(dgwOrder.CurrentRow.Cells[0].Value));
+            }
         }
     }
 }
