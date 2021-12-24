@@ -25,6 +25,29 @@ namespace OrderAutomation.Entities.Dal
             }
         }
 
+        public Admin GetByUsername(string username)
+        {
+            using (OrderAutomationContext context = new OrderAutomationContext())
+            {
+                return context.Admins.FirstOrDefault(p => p.Username == username);
+            }
+        }
+
+        public bool CheckByLogin(string username, string password)
+        {
+            using (OrderAutomationContext context = new OrderAutomationContext())
+            {
+                if (context.Admins.FirstOrDefault(p => p.Username == username && p.Password == password) != null)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+
         public void Add(Admin admin)
         {
             using (OrderAutomationContext context = new OrderAutomationContext())

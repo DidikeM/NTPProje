@@ -77,6 +77,7 @@ namespace OrderAutomation.Entities.Dal
                 return context.Customers.FirstOrDefault(p => p.PhoneNumber == phoneNumber);
             }
         }
+
         public bool CheckByLogin(string username, string password)
         {
             using (OrderAutomationContext context = new OrderAutomationContext())

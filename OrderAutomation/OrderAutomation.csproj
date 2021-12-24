@@ -91,6 +91,12 @@
     <Compile Include="Forms\AdminItemMenageForm.Designer.cs">
       <DependentUpon>AdminItemMenageForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AdminLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminLoginForm.Designer.cs">
+      <DependentUpon>AdminLoginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminTaxMenageForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminItemMenageForm.resx">
       <DependentUpon>AdminItemMenageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminLoginForm.resx">
+      <DependentUpon>AdminLoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminTaxMenageForm.resx">
       <DependentUpon>AdminTaxMenageForm.cs</DependentUpon>
