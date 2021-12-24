@@ -12,33 +12,41 @@ namespace OrderAutomation.Entities
         public int CustomerID { get; set; }
         public DateTime Date { get; set; }
         public int Status { get; set; }
-        public double TotalTax { get; set; }
-        public double TotalPrice { get; set; }
-        public double TotalWeight { get; set; }
+        public decimal TotalTax { get; set; }
+        public decimal TotalPrice { get; set; }
+        public decimal TotalWeight { get; set; }
         //public Customer Customer { get; set; }
         //public Payment Payments { get; set; }
         //public List<OrderDetail> OrderDetails { get; set; }
-        public Order()
+        public void calcAll(List<OrderDetail> orderDetails)
         {
-
+            CalcTotalTax(orderDetails);
+            CalcTotalPrice(orderDetails);
+            CalcTotalWeight(orderDetails);
         }
 
-        int CalcTax()
+        void CalcTotalTax(List<OrderDetail> orderDetails)
         {
-
-            return 0;
+            foreach (var orderDetail in orderDetails)
+            {
+                TotalTax += orderDetail.SubTax;
+            }
         }
 
-        int CalcTotal()
+        void CalcTotalPrice(List<OrderDetail> orderDetails)
         {
-
-            return 0;
+            foreach (var orderDetail in orderDetails)
+            {
+                TotalPrice += orderDetail.SubPrice;
+            }
         }
 
-        int CalcTotalWeight()
+        void CalcTotalWeight(List<OrderDetail> orderDetails)
         {
-
-            return 0;
+            foreach (var orderDetail in orderDetails)
+            {
+                TotalWeight += orderDetail.SubWeight;
+            }
         }
     }
 }

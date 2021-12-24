@@ -97,11 +97,11 @@
     <Compile Include="Forms\CustomerRegisterForm.Designer.cs">
       <DependentUpon>CustomerRegisterForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\CustomerToOrder.cs">
+    <Compile Include="Forms\CustomerToOrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\CustomerToOrder.Designer.cs">
-      <DependentUpon>CustomerToOrder.cs</DependentUpon>
+    <Compile Include="Forms\CustomerToOrderForm.Designer.cs">
+      <DependentUpon>CustomerToOrderForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\DnmForm.cs">
       <SubType>Form</SubType>
@@ -120,8 +120,8 @@
     <EmbeddedResource Include="Forms\CustomerRegisterForm.resx">
       <DependentUpon>CustomerRegisterForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CustomerToOrder.resx">
-      <DependentUpon>CustomerToOrder.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\CustomerToOrderForm.resx">
+      <DependentUpon>CustomerToOrderForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DnmForm.resx">
       <DependentUpon>DnmForm.cs</DependentUpon>
