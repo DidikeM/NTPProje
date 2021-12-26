@@ -29,6 +29,7 @@ namespace OrderAutomation.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerToOrderForm));
             this.dgwItem = new System.Windows.Forms.DataGridView();
             this.gbxItemAdd = new System.Windows.Forms.GroupBox();
             this.tbxQuantity = new System.Windows.Forms.TextBox();
@@ -46,20 +47,21 @@ namespace OrderAutomation.Forms
             this.lblIItemNameText = new System.Windows.Forms.Label();
             this.dgwOrderDetail = new System.Windows.Forms.DataGridView();
             this.btnToOrder = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgwItem)).BeginInit();
             this.gbxItemAdd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwOrderDetail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgwItem
             // 
             this.dgwItem.BackgroundColor = System.Drawing.SystemColors.MenuHighlight;
             this.dgwItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwItem.Location = new System.Drawing.Point(18, 18);
-            this.dgwItem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgwItem.Location = new System.Drawing.Point(12, 12);
             this.dgwItem.Name = "dgwItem";
             this.dgwItem.RowHeadersWidth = 62;
-            this.dgwItem.Size = new System.Drawing.Size(730, 315);
+            this.dgwItem.Size = new System.Drawing.Size(487, 205);
             this.dgwItem.TabIndex = 0;
             this.dgwItem.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwItem_CellClick);
             // 
@@ -78,11 +80,9 @@ namespace OrderAutomation.Forms
             this.gbxItemAdd.Controls.Add(this.lblTaxText);
             this.gbxItemAdd.Controls.Add(this.lblShippingWeightText);
             this.gbxItemAdd.Controls.Add(this.lblIItemNameText);
-            this.gbxItemAdd.Location = new System.Drawing.Point(778, 18);
-            this.gbxItemAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbxItemAdd.Location = new System.Drawing.Point(519, 12);
             this.gbxItemAdd.Name = "gbxItemAdd";
-            this.gbxItemAdd.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbxItemAdd.Size = new System.Drawing.Size(483, 315);
+            this.gbxItemAdd.Size = new System.Drawing.Size(322, 205);
             this.gbxItemAdd.TabIndex = 2;
             this.gbxItemAdd.TabStop = false;
             this.gbxItemAdd.Text = "Ürün Ekle";
@@ -90,10 +90,9 @@ namespace OrderAutomation.Forms
             // tbxQuantity
             // 
             this.tbxQuantity.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.tbxQuantity.Location = new System.Drawing.Point(212, 213);
-            this.tbxQuantity.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxQuantity.Location = new System.Drawing.Point(141, 138);
             this.tbxQuantity.Name = "tbxQuantity";
-            this.tbxQuantity.Size = new System.Drawing.Size(148, 26);
+            this.tbxQuantity.Size = new System.Drawing.Size(100, 20);
             this.tbxQuantity.TabIndex = 17;
             this.tbxQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxQuantity_KeyPress);
             // 
@@ -101,10 +100,9 @@ namespace OrderAutomation.Forms
             // 
             this.lblQuantityText.AutoSize = true;
             this.lblQuantityText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantityText.Location = new System.Drawing.Point(54, 211);
-            this.lblQuantityText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblQuantityText.Location = new System.Drawing.Point(36, 137);
             this.lblQuantityText.Name = "lblQuantityText";
-            this.lblQuantityText.Size = new System.Drawing.Size(145, 27);
+            this.lblQuantityText.Size = new System.Drawing.Size(93, 19);
             this.lblQuantityText.TabIndex = 16;
             this.lblQuantityText.Text = "Sipariş Adedi:";
             // 
@@ -112,10 +110,9 @@ namespace OrderAutomation.Forms
             // 
             this.lblDescription.AutoSize = true;
             this.lblDescription.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.Location = new System.Drawing.Point(207, 171);
-            this.lblDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDescription.Location = new System.Drawing.Point(138, 111);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(24, 27);
+            this.lblDescription.Size = new System.Drawing.Size(17, 19);
             this.lblDescription.TabIndex = 15;
             this.lblDescription.Text = "_";
             this.lblDescription.Click += new System.EventHandler(this.lblDescription_Click);
@@ -124,10 +121,9 @@ namespace OrderAutomation.Forms
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(207, 134);
-            this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPrice.Location = new System.Drawing.Point(138, 87);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(24, 27);
+            this.lblPrice.Size = new System.Drawing.Size(17, 19);
             this.lblPrice.TabIndex = 14;
             this.lblPrice.Text = "_";
             // 
@@ -135,10 +131,9 @@ namespace OrderAutomation.Forms
             // 
             this.lblTax.AutoSize = true;
             this.lblTax.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTax.Location = new System.Drawing.Point(207, 98);
-            this.lblTax.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTax.Location = new System.Drawing.Point(138, 64);
             this.lblTax.Name = "lblTax";
-            this.lblTax.Size = new System.Drawing.Size(24, 27);
+            this.lblTax.Size = new System.Drawing.Size(17, 19);
             this.lblTax.TabIndex = 13;
             this.lblTax.Text = "_";
             // 
@@ -146,10 +141,9 @@ namespace OrderAutomation.Forms
             // 
             this.lblShippingWeight.AutoSize = true;
             this.lblShippingWeight.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShippingWeight.Location = new System.Drawing.Point(207, 61);
-            this.lblShippingWeight.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblShippingWeight.Location = new System.Drawing.Point(138, 40);
             this.lblShippingWeight.Name = "lblShippingWeight";
-            this.lblShippingWeight.Size = new System.Drawing.Size(24, 27);
+            this.lblShippingWeight.Size = new System.Drawing.Size(17, 19);
             this.lblShippingWeight.TabIndex = 12;
             this.lblShippingWeight.Text = "_";
             // 
@@ -157,10 +151,9 @@ namespace OrderAutomation.Forms
             // 
             this.lblIItemName.AutoSize = true;
             this.lblIItemName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIItemName.Location = new System.Drawing.Point(207, 24);
-            this.lblIItemName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIItemName.Location = new System.Drawing.Point(138, 16);
             this.lblIItemName.Name = "lblIItemName";
-            this.lblIItemName.Size = new System.Drawing.Size(24, 27);
+            this.lblIItemName.Size = new System.Drawing.Size(17, 19);
             this.lblIItemName.TabIndex = 11;
             this.lblIItemName.Text = "_";
             // 
@@ -168,10 +161,9 @@ namespace OrderAutomation.Forms
             // 
             this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(150, 258);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAdd.Location = new System.Drawing.Point(100, 168);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(156, 47);
+            this.btnAdd.Size = new System.Drawing.Size(104, 31);
             this.btnAdd.TabIndex = 10;
             this.btnAdd.Text = "Ürün Ekle";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -181,10 +173,9 @@ namespace OrderAutomation.Forms
             // 
             this.lblDescriptionText.AutoSize = true;
             this.lblDescriptionText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescriptionText.Location = new System.Drawing.Point(21, 171);
-            this.lblDescriptionText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDescriptionText.Location = new System.Drawing.Point(14, 111);
             this.lblDescriptionText.Name = "lblDescriptionText";
-            this.lblDescriptionText.Size = new System.Drawing.Size(178, 27);
+            this.lblDescriptionText.Size = new System.Drawing.Size(111, 19);
             this.lblDescriptionText.TabIndex = 8;
             this.lblDescriptionText.Text = "Ürün Açıklaması:";
             // 
@@ -192,10 +183,9 @@ namespace OrderAutomation.Forms
             // 
             this.lblPriceText.AutoSize = true;
             this.lblPriceText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPriceText.Location = new System.Drawing.Point(123, 134);
-            this.lblPriceText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPriceText.Location = new System.Drawing.Point(82, 87);
             this.lblPriceText.Name = "lblPriceText";
-            this.lblPriceText.Size = new System.Drawing.Size(67, 27);
+            this.lblPriceText.Size = new System.Drawing.Size(42, 19);
             this.lblPriceText.TabIndex = 6;
             this.lblPriceText.Text = "Fiyat:";
             // 
@@ -203,10 +193,9 @@ namespace OrderAutomation.Forms
             // 
             this.lblTaxText.AutoSize = true;
             this.lblTaxText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTaxText.Location = new System.Drawing.Point(55, 98);
-            this.lblTaxText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTaxText.Location = new System.Drawing.Point(37, 64);
             this.lblTaxText.Name = "lblTaxText";
-            this.lblTaxText.Size = new System.Drawing.Size(144, 27);
+            this.lblTaxText.Size = new System.Drawing.Size(91, 19);
             this.lblTaxText.TabIndex = 4;
             this.lblTaxText.Text = "Vergi Miktarı:";
             // 
@@ -214,10 +203,9 @@ namespace OrderAutomation.Forms
             // 
             this.lblShippingWeightText.AutoSize = true;
             this.lblShippingWeightText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShippingWeightText.Location = new System.Drawing.Point(46, 61);
-            this.lblShippingWeightText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblShippingWeightText.Location = new System.Drawing.Point(31, 40);
             this.lblShippingWeightText.Name = "lblShippingWeightText";
-            this.lblShippingWeightText.Size = new System.Drawing.Size(153, 27);
+            this.lblShippingWeightText.Size = new System.Drawing.Size(96, 19);
             this.lblShippingWeightText.TabIndex = 2;
             this.lblShippingWeightText.Text = "Kargo Ağırlığı:";
             // 
@@ -225,10 +213,9 @@ namespace OrderAutomation.Forms
             // 
             this.lblIItemNameText.AutoSize = true;
             this.lblIItemNameText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIItemNameText.Location = new System.Drawing.Point(93, 24);
-            this.lblIItemNameText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIItemNameText.Location = new System.Drawing.Point(62, 16);
             this.lblIItemNameText.Name = "lblIItemNameText";
-            this.lblIItemNameText.Size = new System.Drawing.Size(106, 27);
+            this.lblIItemNameText.Size = new System.Drawing.Size(67, 19);
             this.lblIItemNameText.TabIndex = 0;
             this.lblIItemNameText.Text = "Ürün Adı:";
             // 
@@ -236,37 +223,49 @@ namespace OrderAutomation.Forms
             // 
             this.dgwOrderDetail.BackgroundColor = System.Drawing.SystemColors.MenuHighlight;
             this.dgwOrderDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwOrderDetail.Location = new System.Drawing.Point(18, 368);
-            this.dgwOrderDetail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgwOrderDetail.Location = new System.Drawing.Point(12, 239);
             this.dgwOrderDetail.Name = "dgwOrderDetail";
             this.dgwOrderDetail.RowHeadersWidth = 62;
-            this.dgwOrderDetail.Size = new System.Drawing.Size(730, 315);
+            this.dgwOrderDetail.Size = new System.Drawing.Size(487, 205);
             this.dgwOrderDetail.TabIndex = 3;
             // 
             // btnToOrder
             // 
             this.btnToOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnToOrder.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnToOrder.Location = new System.Drawing.Point(887, 516);
-            this.btnToOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnToOrder.Location = new System.Drawing.Point(591, 335);
             this.btnToOrder.Name = "btnToOrder";
-            this.btnToOrder.Size = new System.Drawing.Size(264, 100);
+            this.btnToOrder.Size = new System.Drawing.Size(176, 65);
             this.btnToOrder.TabIndex = 4;
             this.btnToOrder.Text = "SİPARİŞİ TAMAMLA";
             this.btnToOrder.UseVisualStyleBackColor = false;
             this.btnToOrder.Click += new System.EventHandler(this.btnToOrder_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(953, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(46, 47);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // CustomerToOrderForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.ClientSize = new System.Drawing.Size(1515, 702);
+            this.ClientSize = new System.Drawing.Size(1010, 456);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnToOrder);
             this.Controls.Add(this.dgwOrderDetail);
             this.Controls.Add(this.gbxItemAdd);
             this.Controls.Add(this.dgwItem);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Name = "CustomerToOrderForm";
             this.Text = "CustomerToOrder";
             this.Load += new System.EventHandler(this.CustomerToOrder_Load);
@@ -274,6 +273,7 @@ namespace OrderAutomation.Forms
             this.gbxItemAdd.ResumeLayout(false);
             this.gbxItemAdd.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwOrderDetail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -297,5 +297,6 @@ namespace OrderAutomation.Forms
         private System.Windows.Forms.TextBox tbxQuantity;
         private System.Windows.Forms.DataGridView dgwOrderDetail;
         private System.Windows.Forms.Button btnToOrder;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

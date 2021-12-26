@@ -53,5 +53,10 @@ namespace OrderAutomation.Forms
         {
             dgwOrderDetail.DataSource = _orderDetailDal.GetByOrderID(Convert.ToInt32(dgwOrder.CurrentRow.Cells[0].Value));
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

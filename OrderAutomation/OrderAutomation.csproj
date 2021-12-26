@@ -26,6 +26,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -36,6 +37,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -97,6 +99,12 @@
     <Compile Include="Forms\AdminLoginForm.Designer.cs">
       <DependentUpon>AdminLoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AdminMenageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminMenageForm.Designer.cs">
+      <DependentUpon>AdminMenageForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminTaxMenageForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +122,12 @@
     </Compile>
     <Compile Include="Forms\CustomerLoginForm.Designer.cs">
       <DependentUpon>CustomerLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CustomerPaymentOfOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomerPaymentOfOrder.Designer.cs">
+      <DependentUpon>CustomerPaymentOfOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\CustomerRegisterForm.cs">
       <SubType>Form</SubType>
@@ -150,6 +164,9 @@
     <EmbeddedResource Include="Forms\AdminLoginForm.resx">
       <DependentUpon>AdminLoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminMenageForm.resx">
+      <DependentUpon>AdminMenageForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminTaxMenageForm.resx">
       <DependentUpon>AdminTaxMenageForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomerLoginForm.resx">
       <DependentUpon>CustomerLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomerPaymentOfOrder.resx">
+      <DependentUpon>CustomerPaymentOfOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomerRegisterForm.resx">
       <DependentUpon>CustomerRegisterForm.cs</DependentUpon>

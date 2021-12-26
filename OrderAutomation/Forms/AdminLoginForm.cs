@@ -22,7 +22,7 @@ namespace OrderAutomation.Forms
 
         private void AdminLoginForm_Load(object sender, EventArgs e)
         {
-            Controls.Remove(gbxMenage);
+            //Controls.Remove(gbxMenage);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -44,8 +44,14 @@ namespace OrderAutomation.Forms
                 }
                 else
                 {
-                    Controls.Add(gbxMenage);
-                    Controls.Remove(gbxLogin);
+                    //Controls.Add(gbxMenage);
+                    //Controls.Remove(gbxLogin);
+                    using (AdminMenageForm adminMenageForm = new AdminMenageForm())
+                    {
+                        this.Hide();
+                        adminMenageForm.ShowDialog();
+                        this.Show();
+                    }
                     tbxUsername.Text = "";
                     tbxUsername.Enabled = false;
                     tbxPassword.Text = "";
@@ -54,49 +60,39 @@ namespace OrderAutomation.Forms
             }
         }
 
-        private void btnItem_Click(object sender, EventArgs e)
-        {
-            using (AdminItemMenageForm adminItemMenageForm = new AdminItemMenageForm())
-            {
-                this.Hide();
-                adminItemMenageForm.ShowDialog();
-                this.Show();
-            }
-        }
+        //private void btnItem_Click(object sender, EventArgs e)
+        //{
+        //    using (AdminItemMenageForm adminItemMenageForm = new AdminItemMenageForm())
+        //    {
+        //        this.Hide();
+        //        adminItemMenageForm.ShowDialog();
+        //        this.Show();
+        //    }
+        //}
 
-        private void btnCustomer_Click(object sender, EventArgs e)
-        {
-            using (AdminCustomerMenageForm adminCustomerMenageForm = new AdminCustomerMenageForm())
-            {
-                this.Hide();
-                adminCustomerMenageForm.ShowDialog();
-                this.Show();
-            }
-        }
+        //private void btnCustomer_Click(object sender, EventArgs e)
+        //{
+        //    using (AdminCustomerMenageForm adminCustomerMenageForm = new AdminCustomerMenageForm())
+        //    {
+        //        this.Hide();
+        //        adminCustomerMenageForm.ShowDialog();
+        //        this.Show();
+        //    }
+        //}
 
-        private void btnTax_Click(object sender, EventArgs e)
-        {
-            using (AdminTaxMenageForm adminTaxMenageForm = new AdminTaxMenageForm())
-            {
-                this.Hide();
-                adminTaxMenageForm.ShowDialog();
-                this.Show();
-            }
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+        //private void btnTax_Click(object sender, EventArgs e)
+        //{
+        //    using (AdminTaxMenageForm adminTaxMenageForm = new AdminTaxMenageForm())
+        //    {
+        //        this.Hide();
+        //        adminTaxMenageForm.ShowDialog();
+        //        this.Show();
+        //    }
+        //}
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             Close();
-        }
-
-        private void gbxLogin_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }

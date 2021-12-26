@@ -291,5 +291,10 @@ namespace OrderAutomation.Forms
         }
 
         #endregion
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

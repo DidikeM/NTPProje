@@ -112,7 +112,12 @@ namespace OrderAutomation.Forms
                     orderDetail.OrderID = order.ID;
                     _orderDetailDal.Add(orderDetail);
                 }
-
+                using (CustomerPaymentOfOrder customerPaymentOfOrder = new CustomerPaymentOfOrder(order))
+                {
+                    this.Hide();
+                    customerPaymentOfOrder.ShowDialog();
+                    this.Show();
+                }
                 MessageBox.Show("Sipariş başarıyla tamamlandı.");
                 this.Close();
             }
@@ -121,6 +126,11 @@ namespace OrderAutomation.Forms
         private void lblDescription_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

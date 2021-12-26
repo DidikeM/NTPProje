@@ -29,6 +29,7 @@ namespace OrderAutomation.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminItemMenageForm));
             this.dgwItem = new System.Windows.Forms.DataGridView();
             this.gbxItemAdd = new System.Windows.Forms.GroupBox();
             this.cbxAddTax = new System.Windows.Forms.ComboBox();
@@ -55,20 +56,21 @@ namespace OrderAutomation.Forms
             this.lblUpdateShippingWeight = new System.Windows.Forms.Label();
             this.tbxUpdateItemName = new System.Windows.Forms.TextBox();
             this.lblUpdateItemName = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgwItem)).BeginInit();
             this.gbxItemAdd.SuspendLayout();
             this.gbxItemUpAndDel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // dgwItem
             // 
             this.dgwItem.BackgroundColor = System.Drawing.SystemColors.MenuHighlight;
             this.dgwItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwItem.Location = new System.Drawing.Point(18, 18);
-            this.dgwItem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgwItem.Location = new System.Drawing.Point(21, 59);
             this.dgwItem.Name = "dgwItem";
             this.dgwItem.RowHeadersWidth = 62;
-            this.dgwItem.Size = new System.Drawing.Size(1164, 305);
+            this.dgwItem.Size = new System.Drawing.Size(776, 198);
             this.dgwItem.TabIndex = 0;
             this.dgwItem.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwItem_CellClick);
             // 
@@ -85,11 +87,9 @@ namespace OrderAutomation.Forms
             this.gbxItemAdd.Controls.Add(this.lblAddShippingWeight);
             this.gbxItemAdd.Controls.Add(this.tbxAddItemName);
             this.gbxItemAdd.Controls.Add(this.lblIAddItemName);
-            this.gbxItemAdd.Location = new System.Drawing.Point(18, 332);
-            this.gbxItemAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbxItemAdd.Location = new System.Drawing.Point(21, 263);
             this.gbxItemAdd.Name = "gbxItemAdd";
-            this.gbxItemAdd.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbxItemAdd.Size = new System.Drawing.Size(516, 342);
+            this.gbxItemAdd.Size = new System.Drawing.Size(344, 222);
             this.gbxItemAdd.TabIndex = 1;
             this.gbxItemAdd.TabStop = false;
             this.gbxItemAdd.Text = "Ürün Ekle";
@@ -98,20 +98,18 @@ namespace OrderAutomation.Forms
             // 
             this.cbxAddTax.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
             this.cbxAddTax.FormattingEnabled = true;
-            this.cbxAddTax.Location = new System.Drawing.Point(192, 143);
-            this.cbxAddTax.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbxAddTax.Location = new System.Drawing.Point(128, 93);
             this.cbxAddTax.Name = "cbxAddTax";
-            this.cbxAddTax.Size = new System.Drawing.Size(163, 28);
+            this.cbxAddTax.Size = new System.Drawing.Size(110, 21);
             this.cbxAddTax.TabIndex = 3;
             this.cbxAddTax.SelectedIndexChanged += new System.EventHandler(this.cbxAddTax_SelectedIndexChanged);
             // 
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnAdd.Location = new System.Drawing.Point(378, 257);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAdd.Location = new System.Drawing.Point(252, 167);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(112, 75);
+            this.btnAdd.Size = new System.Drawing.Size(75, 49);
             this.btnAdd.TabIndex = 10;
             this.btnAdd.Text = "Ürün Ekle";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -120,11 +118,10 @@ namespace OrderAutomation.Forms
             // tbxAddDescription
             // 
             this.tbxAddDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.tbxAddDescription.Location = new System.Drawing.Point(192, 257);
-            this.tbxAddDescription.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxAddDescription.Location = new System.Drawing.Point(128, 167);
             this.tbxAddDescription.Multiline = true;
             this.tbxAddDescription.Name = "tbxAddDescription";
-            this.tbxAddDescription.Size = new System.Drawing.Size(163, 73);
+            this.tbxAddDescription.Size = new System.Drawing.Size(110, 49);
             this.tbxAddDescription.TabIndex = 9;
             this.tbxAddDescription.TextChanged += new System.EventHandler(this.tbxAddDescription_TextChanged);
             // 
@@ -132,20 +129,18 @@ namespace OrderAutomation.Forms
             // 
             this.lblAddDescription.AutoSize = true;
             this.lblAddDescription.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddDescription.Location = new System.Drawing.Point(8, 262);
-            this.lblAddDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAddDescription.Location = new System.Drawing.Point(5, 170);
             this.lblAddDescription.Name = "lblAddDescription";
-            this.lblAddDescription.Size = new System.Drawing.Size(161, 25);
+            this.lblAddDescription.Size = new System.Drawing.Size(106, 17);
             this.lblAddDescription.TabIndex = 8;
             this.lblAddDescription.Text = "Ürün Açıklaması";
             // 
             // tbxAddPrice
             // 
             this.tbxAddPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.tbxAddPrice.Location = new System.Drawing.Point(192, 198);
-            this.tbxAddPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxAddPrice.Location = new System.Drawing.Point(128, 129);
             this.tbxAddPrice.Name = "tbxAddPrice";
-            this.tbxAddPrice.Size = new System.Drawing.Size(163, 26);
+            this.tbxAddPrice.Size = new System.Drawing.Size(110, 20);
             this.tbxAddPrice.TabIndex = 7;
             this.tbxAddPrice.TextChanged += new System.EventHandler(this.tbxAddPrice_TextChanged);
             this.tbxAddPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxAddPrice_KeyPress);
@@ -154,10 +149,9 @@ namespace OrderAutomation.Forms
             // 
             this.lblAddPrice.AutoSize = true;
             this.lblAddPrice.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddPrice.Location = new System.Drawing.Point(100, 199);
-            this.lblAddPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAddPrice.Location = new System.Drawing.Point(67, 129);
             this.lblAddPrice.Name = "lblAddPrice";
-            this.lblAddPrice.Size = new System.Drawing.Size(57, 25);
+            this.lblAddPrice.Size = new System.Drawing.Size(37, 17);
             this.lblAddPrice.TabIndex = 6;
             this.lblAddPrice.Text = "Fiyat";
             // 
@@ -165,20 +159,18 @@ namespace OrderAutomation.Forms
             // 
             this.lblAddTax.AutoSize = true;
             this.lblAddTax.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddTax.Location = new System.Drawing.Point(36, 148);
-            this.lblAddTax.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAddTax.Location = new System.Drawing.Point(24, 96);
             this.lblAddTax.Name = "lblAddTax";
-            this.lblAddTax.Size = new System.Drawing.Size(129, 25);
+            this.lblAddTax.Size = new System.Drawing.Size(85, 17);
             this.lblAddTax.TabIndex = 4;
             this.lblAddTax.Text = "Vergi Miktarı";
             // 
             // tbxAddShippingWeight
             // 
             this.tbxAddShippingWeight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.tbxAddShippingWeight.Location = new System.Drawing.Point(192, 89);
-            this.tbxAddShippingWeight.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxAddShippingWeight.Location = new System.Drawing.Point(128, 58);
             this.tbxAddShippingWeight.Name = "tbxAddShippingWeight";
-            this.tbxAddShippingWeight.Size = new System.Drawing.Size(163, 26);
+            this.tbxAddShippingWeight.Size = new System.Drawing.Size(110, 20);
             this.tbxAddShippingWeight.TabIndex = 2;
             this.tbxAddShippingWeight.TextChanged += new System.EventHandler(this.tbxAddShippingWeight_TextChanged);
             this.tbxAddShippingWeight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxAddShippingWeight_KeyPress);
@@ -187,20 +179,18 @@ namespace OrderAutomation.Forms
             // 
             this.lblAddShippingWeight.AutoSize = true;
             this.lblAddShippingWeight.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddShippingWeight.Location = new System.Drawing.Point(28, 94);
-            this.lblAddShippingWeight.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAddShippingWeight.Location = new System.Drawing.Point(19, 61);
             this.lblAddShippingWeight.Name = "lblAddShippingWeight";
-            this.lblAddShippingWeight.Size = new System.Drawing.Size(137, 25);
+            this.lblAddShippingWeight.Size = new System.Drawing.Size(90, 17);
             this.lblAddShippingWeight.TabIndex = 2;
             this.lblAddShippingWeight.Text = "Kargo Ağırlığı";
             // 
             // tbxAddItemName
             // 
             this.tbxAddItemName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.tbxAddItemName.Location = new System.Drawing.Point(192, 35);
-            this.tbxAddItemName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxAddItemName.Location = new System.Drawing.Point(128, 23);
             this.tbxAddItemName.Name = "tbxAddItemName";
-            this.tbxAddItemName.Size = new System.Drawing.Size(163, 26);
+            this.tbxAddItemName.Size = new System.Drawing.Size(110, 20);
             this.tbxAddItemName.TabIndex = 1;
             this.tbxAddItemName.TextChanged += new System.EventHandler(this.tbxAddItemName_TextChanged);
             // 
@@ -208,10 +198,9 @@ namespace OrderAutomation.Forms
             // 
             this.lblIAddItemName.AutoSize = true;
             this.lblIAddItemName.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIAddItemName.Location = new System.Drawing.Point(63, 40);
-            this.lblIAddItemName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIAddItemName.Location = new System.Drawing.Point(42, 26);
             this.lblIAddItemName.Name = "lblIAddItemName";
-            this.lblIAddItemName.Size = new System.Drawing.Size(94, 25);
+            this.lblIAddItemName.Size = new System.Drawing.Size(62, 17);
             this.lblIAddItemName.TabIndex = 0;
             this.lblIAddItemName.Text = "Ürün Adı";
             // 
@@ -229,11 +218,9 @@ namespace OrderAutomation.Forms
             this.gbxItemUpAndDel.Controls.Add(this.lblUpdateShippingWeight);
             this.gbxItemUpAndDel.Controls.Add(this.tbxUpdateItemName);
             this.gbxItemUpAndDel.Controls.Add(this.lblUpdateItemName);
-            this.gbxItemUpAndDel.Location = new System.Drawing.Point(666, 332);
-            this.gbxItemUpAndDel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbxItemUpAndDel.Location = new System.Drawing.Point(453, 263);
             this.gbxItemUpAndDel.Name = "gbxItemUpAndDel";
-            this.gbxItemUpAndDel.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbxItemUpAndDel.Size = new System.Drawing.Size(516, 342);
+            this.gbxItemUpAndDel.Size = new System.Drawing.Size(344, 222);
             this.gbxItemUpAndDel.TabIndex = 2;
             this.gbxItemUpAndDel.TabStop = false;
             this.gbxItemUpAndDel.Text = "Ürün Düzenle/Sil";
@@ -241,10 +228,9 @@ namespace OrderAutomation.Forms
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnDelete.Location = new System.Drawing.Point(378, 29);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnDelete.Location = new System.Drawing.Point(252, 19);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(112, 75);
+            this.btnDelete.Size = new System.Drawing.Size(75, 49);
             this.btnDelete.TabIndex = 11;
             this.btnDelete.Text = "Ürün\'ü Sil";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -254,20 +240,18 @@ namespace OrderAutomation.Forms
             // 
             this.cbxUpdateTax.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
             this.cbxUpdateTax.FormattingEnabled = true;
-            this.cbxUpdateTax.Location = new System.Drawing.Point(192, 143);
-            this.cbxUpdateTax.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbxUpdateTax.Location = new System.Drawing.Point(128, 93);
             this.cbxUpdateTax.Name = "cbxUpdateTax";
-            this.cbxUpdateTax.Size = new System.Drawing.Size(163, 28);
+            this.cbxUpdateTax.Size = new System.Drawing.Size(110, 21);
             this.cbxUpdateTax.TabIndex = 3;
             this.cbxUpdateTax.SelectedIndexChanged += new System.EventHandler(this.cbxUpdateTax_SelectedIndexChanged);
             // 
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnUpdate.Location = new System.Drawing.Point(378, 257);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnUpdate.Location = new System.Drawing.Point(252, 167);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(112, 75);
+            this.btnUpdate.Size = new System.Drawing.Size(75, 49);
             this.btnUpdate.TabIndex = 10;
             this.btnUpdate.Text = "Ürün\'ü Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -276,31 +260,28 @@ namespace OrderAutomation.Forms
             // tbxUpdateDescription
             // 
             this.tbxUpdateDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.tbxUpdateDescription.Location = new System.Drawing.Point(192, 257);
-            this.tbxUpdateDescription.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxUpdateDescription.Location = new System.Drawing.Point(128, 167);
             this.tbxUpdateDescription.Multiline = true;
             this.tbxUpdateDescription.Name = "tbxUpdateDescription";
-            this.tbxUpdateDescription.Size = new System.Drawing.Size(163, 73);
+            this.tbxUpdateDescription.Size = new System.Drawing.Size(110, 49);
             this.tbxUpdateDescription.TabIndex = 9;
             this.tbxUpdateDescription.TextChanged += new System.EventHandler(this.tbxUpdateDescription_TextChanged);
             // 
             // lblUpdateDescription
             // 
             this.lblUpdateDescription.AutoSize = true;
-            this.lblUpdateDescription.Location = new System.Drawing.Point(28, 262);
-            this.lblUpdateDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUpdateDescription.Location = new System.Drawing.Point(19, 170);
             this.lblUpdateDescription.Name = "lblUpdateDescription";
-            this.lblUpdateDescription.Size = new System.Drawing.Size(123, 20);
+            this.lblUpdateDescription.Size = new System.Drawing.Size(83, 13);
             this.lblUpdateDescription.TabIndex = 8;
             this.lblUpdateDescription.Text = "Ürün Açıklaması";
             // 
             // tbxUpdatePrice
             // 
             this.tbxUpdatePrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.tbxUpdatePrice.Location = new System.Drawing.Point(192, 198);
-            this.tbxUpdatePrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxUpdatePrice.Location = new System.Drawing.Point(128, 129);
             this.tbxUpdatePrice.Name = "tbxUpdatePrice";
-            this.tbxUpdatePrice.Size = new System.Drawing.Size(163, 26);
+            this.tbxUpdatePrice.Size = new System.Drawing.Size(110, 20);
             this.tbxUpdatePrice.TabIndex = 7;
             this.tbxUpdatePrice.TextChanged += new System.EventHandler(this.tbxUpdatePrice_TextChanged);
             this.tbxUpdatePrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxUpdatePrice_KeyPress);
@@ -308,30 +289,27 @@ namespace OrderAutomation.Forms
             // lblUpdatePrice
             // 
             this.lblUpdatePrice.AutoSize = true;
-            this.lblUpdatePrice.Location = new System.Drawing.Point(28, 203);
-            this.lblUpdatePrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUpdatePrice.Location = new System.Drawing.Point(19, 132);
             this.lblUpdatePrice.Name = "lblUpdatePrice";
-            this.lblUpdatePrice.Size = new System.Drawing.Size(43, 20);
+            this.lblUpdatePrice.Size = new System.Drawing.Size(29, 13);
             this.lblUpdatePrice.TabIndex = 6;
             this.lblUpdatePrice.Text = "Fiyat";
             // 
             // lblUpdateTax
             // 
             this.lblUpdateTax.AutoSize = true;
-            this.lblUpdateTax.Location = new System.Drawing.Point(28, 148);
-            this.lblUpdateTax.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUpdateTax.Location = new System.Drawing.Point(19, 96);
             this.lblUpdateTax.Name = "lblUpdateTax";
-            this.lblUpdateTax.Size = new System.Drawing.Size(96, 20);
+            this.lblUpdateTax.Size = new System.Drawing.Size(65, 13);
             this.lblUpdateTax.TabIndex = 4;
             this.lblUpdateTax.Text = "Vergi Miktarı";
             // 
             // tbxUpdateShippingWeight
             // 
             this.tbxUpdateShippingWeight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.tbxUpdateShippingWeight.Location = new System.Drawing.Point(192, 89);
-            this.tbxUpdateShippingWeight.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxUpdateShippingWeight.Location = new System.Drawing.Point(128, 58);
             this.tbxUpdateShippingWeight.Name = "tbxUpdateShippingWeight";
-            this.tbxUpdateShippingWeight.Size = new System.Drawing.Size(163, 26);
+            this.tbxUpdateShippingWeight.Size = new System.Drawing.Size(110, 20);
             this.tbxUpdateShippingWeight.TabIndex = 2;
             this.tbxUpdateShippingWeight.TextChanged += new System.EventHandler(this.tbxUpdateShippingWeight_TextChanged);
             this.tbxUpdateShippingWeight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxUpdateShippingWeight_KeyPress);
@@ -339,44 +317,55 @@ namespace OrderAutomation.Forms
             // lblUpdateShippingWeight
             // 
             this.lblUpdateShippingWeight.AutoSize = true;
-            this.lblUpdateShippingWeight.Location = new System.Drawing.Point(28, 94);
-            this.lblUpdateShippingWeight.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUpdateShippingWeight.Location = new System.Drawing.Point(19, 61);
             this.lblUpdateShippingWeight.Name = "lblUpdateShippingWeight";
-            this.lblUpdateShippingWeight.Size = new System.Drawing.Size(101, 20);
+            this.lblUpdateShippingWeight.Size = new System.Drawing.Size(68, 13);
             this.lblUpdateShippingWeight.TabIndex = 2;
             this.lblUpdateShippingWeight.Text = "Kargo Ağırlığı";
             // 
             // tbxUpdateItemName
             // 
             this.tbxUpdateItemName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.tbxUpdateItemName.Location = new System.Drawing.Point(192, 35);
-            this.tbxUpdateItemName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxUpdateItemName.Location = new System.Drawing.Point(128, 23);
             this.tbxUpdateItemName.Name = "tbxUpdateItemName";
-            this.tbxUpdateItemName.Size = new System.Drawing.Size(163, 26);
+            this.tbxUpdateItemName.Size = new System.Drawing.Size(110, 20);
             this.tbxUpdateItemName.TabIndex = 1;
             this.tbxUpdateItemName.TextChanged += new System.EventHandler(this.tbxUpdateItemName_TextChanged);
             // 
             // lblUpdateItemName
             // 
             this.lblUpdateItemName.AutoSize = true;
-            this.lblUpdateItemName.Location = new System.Drawing.Point(28, 40);
-            this.lblUpdateItemName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUpdateItemName.Location = new System.Drawing.Point(19, 26);
             this.lblUpdateItemName.Name = "lblUpdateItemName";
-            this.lblUpdateItemName.Size = new System.Drawing.Size(71, 20);
+            this.lblUpdateItemName.Size = new System.Drawing.Size(48, 13);
             this.lblUpdateItemName.TabIndex = 0;
             this.lblUpdateItemName.Text = "Ürün Adı";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(757, 11);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 13;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
             // AdminItemMenageForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(809, 513);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.gbxItemUpAndDel);
             this.Controls.Add(this.gbxItemAdd);
             this.Controls.Add(this.dgwItem);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminItemMenageForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminİtemMenageForm";
             this.Load += new System.EventHandler(this.AdminİtemMenageForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgwItem)).EndInit();
@@ -384,6 +373,7 @@ namespace OrderAutomation.Forms
             this.gbxItemAdd.PerformLayout();
             this.gbxItemUpAndDel.ResumeLayout(false);
             this.gbxItemUpAndDel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -416,5 +406,6 @@ namespace OrderAutomation.Forms
         private System.Windows.Forms.TextBox tbxUpdateItemName;
         private System.Windows.Forms.Label lblUpdateItemName;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
