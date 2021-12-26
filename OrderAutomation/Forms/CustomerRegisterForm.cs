@@ -144,5 +144,15 @@ namespace OrderAutomation.Forms
             //_addressDal.Add(_Address);
             //MessageBox.Show(_Address.ID.ToString());
         }
+
+        private void lblUsername_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

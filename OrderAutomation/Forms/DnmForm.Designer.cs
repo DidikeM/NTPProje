@@ -36,18 +36,22 @@ namespace OrderAutomation.Forms
             // dgwdeneme
             // 
             this.dgwdeneme.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwdeneme.Location = new System.Drawing.Point(12, 12);
+            this.dgwdeneme.Location = new System.Drawing.Point(18, 18);
+            this.dgwdeneme.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgwdeneme.Name = "dgwdeneme";
-            this.dgwdeneme.Size = new System.Drawing.Size(765, 241);
+            this.dgwdeneme.RowHeadersWidth = 62;
+            this.dgwdeneme.Size = new System.Drawing.Size(1148, 371);
             this.dgwdeneme.TabIndex = 0;
             this.dgwdeneme.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // DnmForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.dgwdeneme);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "DnmForm";
             this.Text = "DnmForm";
             this.Load += new System.EventHandler(this.DnmForm_Load);

@@ -39,17 +39,20 @@ namespace OrderAutomation.Forms
             // dgwOrder
             // 
             this.dgwOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwOrder.Location = new System.Drawing.Point(12, 12);
+            this.dgwOrder.Location = new System.Drawing.Point(18, 18);
+            this.dgwOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgwOrder.Name = "dgwOrder";
-            this.dgwOrder.Size = new System.Drawing.Size(729, 198);
+            this.dgwOrder.RowHeadersWidth = 62;
+            this.dgwOrder.Size = new System.Drawing.Size(1094, 305);
             this.dgwOrder.TabIndex = 0;
             this.dgwOrder.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwOrder_CellClick);
             // 
             // btnToOrder
             // 
-            this.btnToOrder.Location = new System.Drawing.Point(768, 45);
+            this.btnToOrder.Location = new System.Drawing.Point(1152, 69);
+            this.btnToOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnToOrder.Name = "btnToOrder";
-            this.btnToOrder.Size = new System.Drawing.Size(182, 73);
+            this.btnToOrder.Size = new System.Drawing.Size(273, 112);
             this.btnToOrder.TabIndex = 1;
             this.btnToOrder.Text = "Yeni sipariş oluştur";
             this.btnToOrder.UseVisualStyleBackColor = true;
@@ -58,19 +61,23 @@ namespace OrderAutomation.Forms
             // dgwOrderDetail
             // 
             this.dgwOrderDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwOrderDetail.Location = new System.Drawing.Point(12, 240);
+            this.dgwOrderDetail.Location = new System.Drawing.Point(18, 369);
+            this.dgwOrderDetail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgwOrderDetail.Name = "dgwOrderDetail";
-            this.dgwOrderDetail.Size = new System.Drawing.Size(729, 198);
+            this.dgwOrderDetail.RowHeadersWidth = 62;
+            this.dgwOrderDetail.Size = new System.Drawing.Size(1094, 305);
             this.dgwOrderDetail.TabIndex = 2;
             // 
             // CustomerListOrderForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1030, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.ClientSize = new System.Drawing.Size(1545, 692);
             this.Controls.Add(this.dgwOrderDetail);
             this.Controls.Add(this.btnToOrder);
             this.Controls.Add(this.dgwOrder);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CustomerListOrderForm";
             this.Text = "CustomerListOrderForm";
             this.Load += new System.EventHandler(this.CustomerListOrderForm_Load);

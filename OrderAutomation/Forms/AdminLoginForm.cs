@@ -45,6 +45,7 @@ namespace OrderAutomation.Forms
                 else
                 {
                     Controls.Add(gbxMenage);
+                    Controls.Remove(gbxLogin);
                     tbxUsername.Text = "";
                     tbxUsername.Enabled = false;
                     tbxPassword.Text = "";
@@ -81,6 +82,21 @@ namespace OrderAutomation.Forms
                 adminTaxMenageForm.ShowDialog();
                 this.Show();
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void gbxLogin_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

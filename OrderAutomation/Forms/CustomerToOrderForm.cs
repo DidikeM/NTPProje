@@ -117,5 +117,10 @@ namespace OrderAutomation.Forms
                 this.Close();
             }
         }
+
+        private void lblDescription_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
